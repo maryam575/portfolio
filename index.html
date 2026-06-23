@@ -2,187 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="where/.css">
-  <link rel="stylesheet" href="there.css">
-
-  <style>
-    .hero-section img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .hero-section {
-      max-width: 100%;
-      overflow: hidden;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn">New game</button>
 
-  <header>
-    <div class="navbar">
-      <div class="nav-logo border">
-        <img
-          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
-          alt="Logo">
-      </div>
-
-      <div class="nav-address border">
-        <p class="add-frist">Deliver to</p>
-        <div class="add-icon">
-          <i class="fa-solid fa-location-dot"></i>
-          <p class="add-sec"><br>India</p>
-        </div>
-      </div>
-
-      <div class="nav-search border">
-        <select>
-          <option>All</option>
-          <option>Input</option>
-        </select>
-        <input type="text" placeholder="Search Flipkart">
-        <div class="search-icon">
-          <div class="search">
-            <button>Search</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="nav-signing border">
-        <p><span>Hello, sign in</span></p>
-        <p class="nav-second">Account & Lists</p>
-      </div>
-      <div class="nav-return border">
-        <p><span>Returns</span></p>
-        <p class="nav-second">& Orders</p>
-      </div>
-      <div class="nav-carts border">
-        <i class="fa-light fa-cart-arrow-up"></i> Carts
-      </div>
     </div>
-  </header>
-
-  <!-- SECOND LINE CONTENT -->
-  <div style="width: 100%; margin-top: 10px;">
-    <div class="pennal">
-      <div class="pennal-all"></div>
-      <div class="pennal-ops">
-        <p>Today's Deals</p>
-        <p>Registry</p>
-        <p>Prime Video</p>
-        <p>Gift Cards</p>
-        <p>Customer Service</p>
-        <p>Sell</p>
-        <p>Shop deals in Electronics</p>
-      </div>
-    </div>
-  </div>
-  <!-- HERO SECTION -->
-  <div class="hero-section">
-    <img src="https://m.media-amazon.com/images/I/71h15GsHkvL._SX3000_.jpg" alt="Hero Image">
-  </div>
-  
-  <div class="shop-section">
-    <div class="Box1 Box ">
-      <div class="box-content">
-        <h2>Popular products in Apparel internationally</h2>
-        <div class="box-img">
-          <img src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg" alt="">
+    <main>
+        <h1> Tic- Tac -Toe</h1>
+        <div class="container">
+            <div class="game ">
+                <button class="box">X</button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+            <button id="reset-btn"> Reset game</button>
         </div>
-      </div>
-      </div>
-    <div class="Box2 Box ">
-      <div class="box-content">
-        <h2>Best Sellers in Clothing, Shoes & Jewelry</h2>
-        <div class="box-img">
-          <img src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="Box3 Box ">
-      <div class="box-content">
-        <h2>Gifts for Dad under $25
-</h2>
-        <div class="box-img">
-          <img src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="Box4 Box ">
-      <div class="box-content">
-        <h2> New home arrivals under $50</h2>
-        <div class="box-img">
-          <img src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="Box5 Box ">
-      <div class="box-content">
-        <h2>Top picks for Pakistan</h2>
-        <div class="box-img">
-          <img src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg" alt="">
-        </div>
-      </div>
-    </div>
-     <div class="Box6 Box ">
-      <div class="box-content">
-        <h2>Best Sellers in Computers & Accessories</h2>
-        <div class="box-img">
-          <img src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg" alt="">
-        </div>
-      </div>
-     </div>
-  </div>
-<footer>
- <div class="foot-pennal">
-   copyrigh &copy; Back to go
- </div> 
- <div class="foot-pennal2">
-  <ul>
-      <p>Get to Know Us</p>
-      <a > Careers</a>
-      <a>Amazon Science</a>
-      <a>Blog</a>
-      <a>About Amazon</a>
-      <a >Investor Relations</a>
-    </ul>
-<ul>
-      <p>Get to Know Us</p>
-      <a > Careers</a>
-      <a>Amazon Science</a>
-      <a>Blog</a>
-      <a>About Amazon</a>
-      <a >Investor Relations</a>
-    </ul>
-    <ul>
-      <p>Get to Know Us</p>
-      <a > Careers</a>
-      <a>Amazon Science</a>
-      <a>Blog</a>
-      <a>About Amazon</a>
-      <a >Investor Relations</a>
-    </ul>
-    <ul>
-      <p>Get to Know Us</p>
-      <a > Careers</a>
-      <a>Amazon Science</a>
-      <a>Blog</a>
-      <a>About Amazon</a>
-      <a >Investor Relations</a>
-    </ul>
-      </div>
-    </div>
- </div>
-</footer>
-
+    </main>
+    <script src="dos.js"></script>
 </body>
 
 </html>
